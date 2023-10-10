@@ -21,12 +21,9 @@ function closeModal() {
 }
 
 function toggleMenu() {
-    // Check if the menu is open (right is 0px)
     if (slideMenu.style.right === "0px") {
-        // If it's open, close it by setting right to -250px
         slideMenu.style.right = "-250px";
     } else {
-        // If it's closed, open it by setting right to 0px
         slideMenu.style.right = "0px";
     }
 }
@@ -37,4 +34,4 @@ closeModalButton.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
 // Add event listener to the menu button to toggle the menu
-openMenuButton.addEventListener("click", toggleMenu); 
+openMenuButton.addEventListener("click", toggleMenu);
